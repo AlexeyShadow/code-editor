@@ -11,11 +11,13 @@ import {
   pythonCode,
   golangCode,
 } from "../../../../server/MockedData/mockedData";
+import golang_ico from "../../../assets/golang.png";
+import python_ico from "../../../assets/python.png";
 import styles from "./editor.module.css";
 
 const selectLanguageOptions = [
-  { value: "python", label: "Python", image: "/src/assets/python.png" },
-  { value: "golang", label: "Golang", image: "/src/assets/golang.png" },
+  { value: "python", label: "Python", image: "src/assets/python.png" },
+  { value: "golang", label: "Golang", image: "src/assets/golang.png" },
 ];
 
 export const Editor = () => {
