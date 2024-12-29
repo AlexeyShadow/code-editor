@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 10px;
+  padding: 18px;
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+.description_icon {
+  width: 24px;
+  height: 24px;
+}

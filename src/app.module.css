@@ -1,0 +1,29 @@
+.grid_container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 0.7fr 1fr;
+  gap: 12px;
+  grid-template-areas:
+    "problem_panel editor_panel editor_panel"
+    "problem_panel editor_panel editor_panel"
+    "problem_panel result_panel result_panel";
+}
+
+.problem_panel {
+  grid-area: problem_panel;
+  background-color: #1b2b34;
+  border-radius: 4px;
+}
+
+.editor_panel {
+  grid-area: editor_panel;
+  background-color: #1b2b34;
+  border-radius: 4px;
+}
+
+.result_panel {
+  grid-area: result_panel;
+  background-color: #1b2b34;
+  border-radius: 4px;
+}
