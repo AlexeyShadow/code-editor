@@ -2,13 +2,13 @@
 
 ## Запуск приложения
 
-npm install
-npm run dev
-Приложение запустится на http://localhost:5173
+npm install  
+npm run dev  
+Приложение запустится на http://localhost:5173  
 
-cd server
-npm run server
-Приложение запустится на http://localhost:3000
+cd server  
+npm run server  
+Приложение запустится на http://localhost:3000  
 
 ## Описание задачи
 
