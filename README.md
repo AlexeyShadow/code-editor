@@ -1,8 +1,29 @@
-# React + Vite
+# Репозиторий проекта Code-editor (тестовое задание на позицию Junior Frontend Developer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Запуск приложения
 
-Currently, two official plugins are available:
+npm install
+npm run dev
+# Приложение запустится на http://localhost:5173
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+cd server
+npm run server
+# Приложение запустится на http://localhost:3000/languages
+
+## Описание задачи
+
+Произвести сложение двух чисел: 1 и 1. Вывести результат в консоль. 
+
+Пример для Python:
+Ввести в консоль `print(1 + 1)`
+Пример для Golang:
+Ввести в консоль package `"fmt" fmt.Println(1 + 1)`
+Допускается произвольное количество пробелов и переходов на новую строку
+Кликнуть кнопку Run
+
+## Ограничение UI 
+Плохо работает адаптивность. 
+
+## Варианты расширения
+1. Добавить поддержку JS и TS
+2. Ввести тематические разделы (алгоритмы сортировки, поиска и т.д.). Считаю, что будет полезным. раздел, отведённый под задачи, засветившиеся на собеседования в крупные компании. Это как Сracking Coding Interview онлайн. Такой раздел можно монетизировать за счёт желающих пройти подготовку к интервью в конкретную компанию.
