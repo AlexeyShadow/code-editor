@@ -4,7 +4,7 @@ export const ProblemBoardTabs = () => {
   return (
     <div className={styles.container}>
       <img
-        src="./src/assets/description.png"
+        src="C:\Work\code-editor\src\assets\description.png"
         className={styles.description_icon}
       />
       <span>Description</span>
