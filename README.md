@@ -8,7 +8,7 @@ npm run dev
 
 cd server
 npm run server
-# Приложение запустится на http://localhost:3000/languages
+# Приложение запустится на http://localhost:3000
 
 ## Описание задачи
 
