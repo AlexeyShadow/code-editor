@@ -11,8 +11,6 @@ import {
   pythonCode,
   golangCode,
 } from "../../../../server/MockedData/mockedData";
-import golang_ico from "../../../assets/golang.png";
-import python_ico from "../../../assets/python.png";
 import styles from "./editor.module.css";
 
 const selectLanguageOptions = [
@@ -81,6 +79,11 @@ export const Editor = () => {
         setSelectedLanguage={setSelectedLanguage}
         selectedLanguage={selectedLanguage}
         selectLanguageOptions={selectLanguageOptions}
+        formatOptionLabel={(language) => (
+          <div>
+            <img src={language.image} />
+          </div>
+        )}
       />
       <CodeMirror
         value={value}
