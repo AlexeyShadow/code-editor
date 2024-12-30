@@ -5,3 +5,10 @@
   margin-bottom: 12px;
   font-size: 1rem;
 }
+
+.rtt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

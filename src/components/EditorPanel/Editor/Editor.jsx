@@ -12,19 +12,33 @@ import {
   golangCode,
 } from "../../../../server/MockedData/mockedData";
 import pythonIcon from "../../../assets/python.png";
+import golangIcon from "../../../assets/golang.png";
 import styles from "./editor.module.css";
 
+// const selectLanguageOptions = [
+//   { value: "python", label: "Python", image: "src/assets/python.png" },
+//   { value: "golang", label: "Golang", image: "src/assets/golang.png" },
+// ];
+
 const selectLanguageOptions = [
-  { value: "python", label: "Python", image: "src/assets/python.png" },
   {
     value: "python",
     label: (
-      <div>
-        <img src={pythonIcon} height="30px" width="30px" />
+      <div className={styles.rtt}>
+        <img src={pythonIcon} height="24px" width="24px" />
+        <span>Python</span>
       </div>
     ),
   },
-  { value: "golang", label: "Golang", image: "src/assets/golang.png" },
+  {
+    value: "golang",
+    label: (
+      <div className={styles.rtt}>
+        <img src={golangIcon} height="24px" width="24px" />
+        <span>Golang</span>
+      </div>
+    ),
+  },
 ];
 
 export const Editor = () => {
@@ -88,11 +102,6 @@ export const Editor = () => {
         setSelectedLanguage={setSelectedLanguage}
         selectedLanguage={selectedLanguage}
         selectLanguageOptions={selectLanguageOptions}
-        formatOptionLabel={(language) => (
-          <div>
-            <img src={language.image} />
-          </div>
-        )}
       />
       <CodeMirror
         value={value}

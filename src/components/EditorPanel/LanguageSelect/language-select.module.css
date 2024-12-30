@@ -3,15 +3,8 @@
   margin: 10px;
 }
 
-.language_image {
-  width: 24px;
-  height: 24px;
-}
-
 .image_wrapper {
   display: flex;
-  align-items: center;
-  gap: 8px;
   color: #909191;
   font-size: 1rem;
 }

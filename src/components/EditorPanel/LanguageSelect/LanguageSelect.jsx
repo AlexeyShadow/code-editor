@@ -23,7 +23,7 @@ export const LanguageSelect = (props) => {
       placeholder={false}
       formatOptionLabel={(option) => (
         <div className={styles.image_wrapper}>
-          <img src={option.image} className={styles.language_image} />
+          <img src={option.image} />
           <span className={styles.label_option}>{option.label}</span>
         </div>
       )}
