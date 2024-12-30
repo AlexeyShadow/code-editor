@@ -4,12 +4,14 @@ export const ExecuteButton = (props) => {
   const { executeCode, isDisabled } = props;
 
   return (
-    <button
-      className={styles.button}
-      onClick={executeCode}
-      disabled={isDisabled}
-    >
-      Run
-    </button>
+    <>
+      <button
+        className={styles.button}
+        onClick={executeCode}
+        disabled={isDisabled}
+      >
+        Run
+      </button>
+    </>
   );
 };

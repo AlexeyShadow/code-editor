@@ -1,34 +1,3 @@
 {
-  "languages": [
-    {
-      "id": "f330",
-      "language": "python",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "9175",
-      "language": "golang",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "7536",
-      "language": "golang",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "ab2d",
-      "language": "python",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "5f87",
-      "language": "python",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    },
-    {
-      "id": "bcfd",
-      "language": "python",
-      "code": "package \"fmt\" \nfmt.Println\n\n\n\n\n\n\n\n\n\n\n\n"
-    }
-  ]
+  "languages": []
 }

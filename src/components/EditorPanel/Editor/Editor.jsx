@@ -15,16 +15,11 @@ import pythonIcon from "../../../assets/python.png";
 import golangIcon from "../../../assets/golang.png";
 import styles from "./editor.module.css";
 
-// const selectLanguageOptions = [
-//   { value: "python", label: "Python", image: "src/assets/python.png" },
-//   { value: "golang", label: "Golang", image: "src/assets/golang.png" },
-// ];
-
 const selectLanguageOptions = [
   {
     value: "python",
     label: (
-      <div className={styles.rtt}>
+      <div className={styles.icon_wrapper}>
         <img src={pythonIcon} height="24px" width="24px" />
         <span>Python</span>
       </div>
@@ -33,7 +28,7 @@ const selectLanguageOptions = [
   {
     value: "golang",
     label: (
-      <div className={styles.rtt}>
+      <div className={styles.icon_wrapper}>
         <img src={golangIcon} height="24px" width="24px" />
         <span>Golang</span>
       </div>
@@ -97,26 +92,29 @@ export const Editor = () => {
   }, [selectedLanguage.value, value]);
 
   return (
-    <>
-      <LanguageSelect
-        setSelectedLanguage={setSelectedLanguage}
-        selectedLanguage={selectedLanguage}
-        selectLanguageOptions={selectLanguageOptions}
-      />
-      <CodeMirror
-        value={value}
-        height="700px"
-        extensions={[
-          selectedLanguage.value === "python" ? python() : go(),
-          EditorView.lineWrapping,
-        ]}
-        onChange={onChange}
-        className={styles.editor}
-        theme={oneDark}
-      />
+    <div className={styles.container}>
       <div>
+        <LanguageSelect
+          setSelectedLanguage={setSelectedLanguage}
+          selectedLanguage={selectedLanguage}
+          selectLanguageOptions={selectLanguageOptions}
+        />
+        <CodeMirror
+          value={value}
+          height="60vh"
+          minHeight="0"
+          extensions={[
+            selectedLanguage.value === "python" ? python() : go(),
+            EditorView.lineWrapping,
+          ]}
+          onChange={onChange}
+          className={styles.editor}
+          theme={oneDark}
+        />
+      </div>
+      <div className={styles.executeButton}>
         <ExecuteButton executeCode={executeCode} isDisabled={isDisabled} />
       </div>
-    </>
+    </div>
   );
 };

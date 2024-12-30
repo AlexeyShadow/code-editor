@@ -1,5 +1,7 @@
 .container {
-  height: 400px;
   overflow-y: scroll;
   scrollbar-color: #abb9be #243641;
+  height: 100%;
+  display: flex;
+  min-height: 200px;
 }
